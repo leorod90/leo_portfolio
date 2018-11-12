@@ -1,0 +1,183 @@
+#portfolio-project {
+  padding: 80px 15px;
+}
+
+.project-img-contain {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.project-img {
+  height: 450px;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  /* background-attachment: fixed !important; */
+}
+
+.mobile {
+  display: none;
+}
+
+#portfolio-project>h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.project-buttons {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.project-buttons>a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: white;
+  background: black;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.project-buttons>a:hover {
+  background: #ff5253;
+}
+
+.project-buttons>a:hover>.fas {
+  color: white;
+}
+
+.project-buttons>a>.fas {
+  margin-right: 10px;
+  color: #ff5253;
+}
+
+.project-buttons>a:hover>.fas {
+  color: white;
+}
+
+#portfolio-project>p {
+  color: #929294;
+  font-size: 1.2rem;
+  letter-spacing: 1.7;
+  text-transform: capitalize;
+  margin-bottom: 1.8rem;
+}
+
+.api-link {
+  color: black;
+  text-decoration: none;
+  border: none;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+}
+
+.movieDb:hover {
+  color: #01D277;
+  border-bottom: 2px solid #01D277;
+}
+
+.food2:hover {
+  color: #F9260C;
+  border-bottom: 2px solid #F9260C;
+}
+
+.marvelApi:hover {
+  color: white;
+  background: #F0141E;
+  border: none;
+  padding: 0px 2px;
+}
+
+.putsmail:hover {
+  color: #E67E22;
+  border-bottom: 2px solid #E67E22;
+}
+
+.technologies {
+  margin-bottom: 70px;
+}
+
+.technologies>h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.technologies-contain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.technologies-icon {
+  width: 100%;
+  max-width: 120px;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all .3s ease-in-out;
+  margin: 0 auto;
+}
+
+.technologies-icon:hover {
+  cursor: pointer;
+  -webkit-filter: grayscale(0);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0);
+}
+
+.video {
+  text-align: center;
+}
+
+.video>h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* MEDIA QUIERY */
+
+/* phones */
+
+@media only screen and (max-width: 767px) {
+  #portfolio-project>h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .project-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  #portfolio-project>p {
+    font-size: 1rem;
+  }
+
+  .technologies>h3 {
+    text-align: center;
+  }
+  .technologies-contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .technologies-icon {
+    -webkit-filter: grayscale(0);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+  }
+  .video>iframe {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 607px) {
+  .screen {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
