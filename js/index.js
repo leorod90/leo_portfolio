@@ -1,15 +1,15 @@
 //TOGGLE BURGER
-const menuBtn = document.getElementsByClassName("menu-btn");
-const mobileMenu = document.getElementsByClassName("mobile-menu");
+const menuBurger = document.getElementsByClassName("menu-btn");
+const sideMenu = document.getElementsByClassName("mobile-menu");
 
 const toggleMenu = function () {
-  mobileMenu[0].classList.toggle("active");
+  sideMenu[0].classList.toggle("active");
 };
 
-menuBtn[0].addEventListener("click", toggleMenu);
+menuBurger[0].addEventListener("click", toggleMenu);
 
 document.querySelector("#contain-all").addEventListener("click", function () {
-  mobileMenu[0].classList.remove("active");
+  sideMenu[0].classList.remove("active");
 });
 
 // SCROLL HEADER ANIMATION
@@ -36,8 +36,6 @@ $(document).scroll(function () {
   var y = $(this).scrollTop();
   const projectsDivTop = $("#projects").offset().top;
   const aboutMeDivTop = $("#about-me").offset().top;
-
-  const projectsDivBottom = $("#projects").offset().bottom;
 
   if (y < projectsDivTop) {
     removeAllClasses();
