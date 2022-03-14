@@ -376,6 +376,12 @@ a.mobile-active {
   width: 150;
   margin: 0 10;
 }
+
+.not_available {
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* msie */
+}
+
 .git {
   height: 50;
 }
@@ -440,7 +446,7 @@ footer > p {
 /* phones */
 
 @media only screen and (max-width: 767px) {
-  .header{
+  .header {
     padding: 5;
   }
   .header-menu {
