@@ -71,7 +71,7 @@ body {
   align-items: center;
 }
 
-.header-menu > a {
+.header-menu>a {
   font-size: 12px;
   padding: 0 10px;
   text-decoration: none;
@@ -81,7 +81,7 @@ body {
   transition: all 0.1s ease-in-out;
 }
 
-.header-menu > a:hover {
+.header-menu>a:hover {
   font-weight: 700;
   color: #ff5253;
   border-bottom: 2px solid #ff5253;
@@ -135,17 +135,18 @@ body {
   box-shadow: 0px 0px 93px -10px rgba(0, 0, 0, 0.75);
 }
 
-.mobile-menu > a {
+.mobile-menu>a {
   padding: 15px;
   padding-left: 25px;
   text-decoration: none;
   color: black;
 }
 
-.mobile-menu > a:hover {
+.mobile-menu>a:hover {
   background: #ff5253;
   color: white;
 }
+
 a.mobile-active {
   background: #ff5253;
   color: white;
@@ -175,7 +176,7 @@ a.mobile-active {
   position: relative;
 }
 
-.info > h1 {
+.info>h1 {
   z-index: 1;
   position: relative;
   font-size: 2rem;
@@ -185,7 +186,7 @@ a.mobile-active {
   margin-bottom: 2rem;
 }
 
-.info > p {
+.info>p {
   z-index: 1;
   position: relative;
   color: #919191;
@@ -193,7 +194,7 @@ a.mobile-active {
   margin-bottom: 4rem;
 }
 
-.info > a {
+.info>a {
   z-index: 1;
   position: relative;
   font-weight: 600;
@@ -259,7 +260,7 @@ a.mobile-active {
   border-radius: 50%;
 }
 
-.about-me-title > h1 {
+.about-me-title>h1 {
   position: relative;
   z-index: 1;
   font-size: 2.5rem;
@@ -310,7 +311,7 @@ a.mobile-active {
   height: 130px;
 }
 
-.projects-title > h1 {
+.projects-title>h1 {
   position: relative;
   z-index: 1;
   font-size: 2.5rem;
@@ -330,6 +331,18 @@ a.mobile-active {
   width: 50%;
   flex: 1;
 }
+
+.mp4-wrapper {
+  overflow: hidden;
+}
+
+.huddln {
+  height: 600;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .app {
   margin: 1% 0;
   padding: 20;
@@ -357,6 +370,10 @@ a.mobile-active {
   overflow: hidden;
 }
 
+.black {
+  background-color: black;
+}
+
 .app-details h6 {
   margin: 10 0;
   font-weight: bold;
@@ -373,9 +390,11 @@ a.mobile-active {
   align-items: center;
   flex-direction: column;
 }
+
 .store_links {
   margin: 25px 0;
 }
+
 .download {
   width: 150;
   margin: 0 10;
@@ -383,15 +402,18 @@ a.mobile-active {
 
 .not_available {
   opacity: 0.4;
-  filter: alpha(opacity=40); /* msie */
+  filter: alpha(opacity=40);
+  /* msie */
 }
 
 .git {
   height: 50;
 }
+
 .error {
   color: red;
 }
+
 /* FOOTER */
 
 footer {
@@ -401,17 +423,17 @@ footer {
   color: gray;
 }
 
-footer > h5 {
+footer>h5 {
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-footer > h6 {
+footer>h6 {
   font-size: 0.8rem;
   text-transform: capitalize;
 }
 
-footer > p {
+footer>p {
   color: black;
   margin-top: 10px;
 }
@@ -420,8 +442,7 @@ footer > p {
 
 /* in between */
 
-@media only screen and (max-width: 1200px) {
-}
+@media only screen and (max-width: 1200px) {}
 
 /* tablets */
 
@@ -429,17 +450,21 @@ footer > p {
   .header-contain {
     width: 100%;
   }
+
   #contain-all {
     width: 100%;
   }
+
   .projects-container {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
   }
+
   .app {
     width: 100%;
   }
+
   .mp4 {
     width: 120%;
     max-width: 600;
@@ -453,42 +478,53 @@ footer > p {
   .header {
     padding: 5;
   }
+
   .header-menu {
     display: none;
   }
+
   .logo {
     font-size: 1.3rem;
   }
+
   .menu-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   .mobile-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   .header-move {
     opacity: 1;
   }
+
   #home {
     padding-top: 0;
   }
-  .skills-title > h1 {
+
+  .skills-title>h1 {
     font-size: 1.8rem;
     letter-spacing: 3px;
   }
+
   .blue-square {
     display: none;
   }
+
   .me-img {
     height: 400px;
   }
+
   .store_links {
     display: flex;
     flex-direction: column;
   }
+
   .download {
     margin: 2.5 0;
   }
