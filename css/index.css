@@ -5,12 +5,16 @@
 /* basic ui color palet */
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 body {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: 'Roboto Slab', serif;
   letter-spacing: 1;
   padding-top: 100px;
+  background-color: #f8f8f8;
 }
+
 
 .header {
   display: -webkit-box;
