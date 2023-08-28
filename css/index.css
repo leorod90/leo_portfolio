@@ -534,3 +534,53 @@ footer>p {
     margin: 2.5 0;
   }
 }
+
+.card1 {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+}
+
+.go-corner {
+  position: absolute;
+  background-color: green;
+  height: 25%;
+  width: 25%;
+  top: -7.5%;
+  right: -7.5%;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out
+}
+
+.card1:hover>.go-corner {
+  top: -30%;
+  right: -30%;
+  height: 200%;
+  width: 200%;
+  /* transition: height 0.4s ease, width 0.4s ease; */
+  /* transition: border-radius .2s ease-in-out */
+}
+
+.go-arrow {
+  position: absolute;
+  color: white;
+  top: 2.5px;
+  right: 5px;
+}
+
+.card1:hover>.appear-div {
+  opacity: 1;
+  transition: all 0.8s ease-in-out
+}
+
+.appear-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}

@@ -78,3 +78,15 @@ $(".mobile-menu a").click(function (event) {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
+
+
+//PLAY MP4
+$('.mp4').on('mouseover mouseout', function (e) {
+  const evt = e.type;
+  if (evt === 'mouseover') {
+    this.play();
+  }
+  if (evt === 'mouseout') {
+    this.pause();
+  }
+});
