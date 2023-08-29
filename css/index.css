@@ -8,8 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 :root {
-  --blue: #04b3d5;
+  --blue: #6c6d71;
   --white: #f8f8f8;
+  --red: #00caf3;
+  --blue: #blue;
 }
 
 body {
@@ -63,6 +65,7 @@ body {
 .logo-name {
   background: black;
   padding: 15px 20px;
+  color: var(--white);
 }
 
 .header-menu {
@@ -89,19 +92,19 @@ body {
 
 .header-menu>a:hover {
   font-weight: 700;
-  color: #ff5253;
-  border-bottom: 2px solid #ff5253;
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
 }
 
 .nav-active {
   font-weight: 700;
-  color: #ff5253 !important;
-  border-bottom: 2px solid #ff5253;
+  color: var(--red) !important;
+  border-bottom: 2px solid var(--red);
 }
 
 .menu-btn {
   font-weight: 700;
-  color: #ff5253;
+  color: var(--red);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -149,20 +152,21 @@ body {
 }
 
 .mobile-menu>a:hover {
-  background: #ff5253;
+  background: var(--red);
   color: white;
 }
 
 a.mobile-active {
-  background: #ff5253;
+  background: var(--red);
   color: white;
 }
 
 /* CONTAIN */
 
 #contain-all {
-  width: 80%;
-  max-width: 1100px;
+  /* display: flex; */
+  width: 99%;
+  max-width: 1020px;
   margin: 0 auto;
 }
 
@@ -214,7 +218,7 @@ a.mobile-active {
 }
 
 .blue-square {
-  border: 20px solid  var(--blue);;
+  border: 20px solid var(--red);
   width: 500px;
   height: 500px;
   position: absolute;
@@ -237,6 +241,10 @@ a.mobile-active {
 /* ABOUT ME */
 
 #about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 25px 15px;
   margin-bottom: 50;
 }
@@ -280,11 +288,17 @@ a.mobile-active {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 25px;
+  align-self: center;
+  max-width: 500px;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 17px -7px rgba(168, 168, 168, 1);
+  -moz-box-shadow: 10px 10px 17px -7px rgba(168, 168, 168, 1);
+  box-shadow: 10px 10px 17px -7px rgba(168, 168, 168, 1);
 }
 
 .about-me-container p {
   padding: 50;
-  background: #f8f8f6;
   max-width: 800px;
 }
 
@@ -292,6 +306,7 @@ a.mobile-active {
 
 #projects {
   padding: 60px 15px;
+  width: 100%;
 }
 
 .projects-title {
@@ -343,6 +358,7 @@ a.mobile-active {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin: 0 auto;
 }
 
 .mp4-wrapper {
@@ -372,12 +388,47 @@ a.mobile-active {
 .mp4-wrapper-main {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  order: 2;
 }
 
+.card3 {
+  order: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card3>.links {
+  margin-top: 20px;
+}
+
+.hulddn-project {
+  display: flex;
+  flex-direction: column;
+}
+
+
 @media only screen and (min-width: 1080px) {
+  .card1 {
+    width: 50%;
+  }
+
+  .hulddn-project {
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
   .mp4-wrapper-main {
     display: flex;
     flex-direction: row;
+    order: 3
+  }
+
+  .card3 {
+    order: 2;
   }
 
   .mp4-wrapper {
@@ -587,22 +638,38 @@ footer>p {
 }
 
 .card1 {
-  height: 200px;
-  width: 200px;
-  background-color: red;
+  /* order: 1; */
+  display: flex;
+  align-items: center;
+  height: 220px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 25px;
+  background-color: white;
   position: relative;
+  -webkit-box-shadow: 10px 10px 17px -7px rgba(168, 168, 168, 1);
+  -moz-box-shadow: 10px 10px 17px -7px rgba(168, 168, 168, 1);
+  box-shadow: 10px 10px 17px -7px rgba(168, 168, 168, 1);
   overflow: hidden;
+  cursor: pointer;
+}
+
+.order1 {
+  order: 1;
+  align-self: left;
 }
 
 .go-corner {
   position: absolute;
-  background-color: green;
-  height: 25%;
-  width: 25%;
-  top: -7.5%;
-  right: -7.5%;
+  background-color: var(--blue);
+  height: 50px;
+  width: 50px;
+  top: -12.5px;
+  right: -12.5px;
   border-radius: 50%;
-  transition: all 0.4s ease-in-out
+  transition: all 0.4s ease-in-out;
 }
 
 .card1:hover>.go-corner {
@@ -617,8 +684,8 @@ footer>p {
 .go-arrow {
   position: absolute;
   color: white;
-  top: 2.5px;
-  right: 5px;
+  top: 5px;
+  right: 7.5px;
 }
 
 .card1:hover>.appear-div {
@@ -626,12 +693,25 @@ footer>p {
   transition: all 0.8s ease-in-out
 }
 
+ul {
+  list-style-position: outside;
+}
+
 .appear-div {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   opacity: 0;
   transition: all 0.2s ease-in-out;
+  color: #f8f8f8;
+}
+
+li:not(:last-child) {
+  margin-bottom: 5px;
 }
