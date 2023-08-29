@@ -7,11 +7,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+/* --blue: #6c6d71;
+--white: #f8f8f8;
+--red: #00caf3;
+--blue: #ff5253; */
 :root {
-  --blue: #6c6d71;
+  --gray: #6c6d71;
   --white: #f8f8f8;
-  --red: #00caf3;
-  --blue: #blue;
+  --blue: #00caf3;
+  --red: #ff5253;
+  --blueO: rgba(0, 202, 243, .5);
+  --redO: rgb(255, 82, 83, .5);
 }
 
 body {
@@ -218,7 +224,7 @@ a.mobile-active {
 }
 
 .blue-square {
-  border: 20px solid var(--red);
+  border: 20px solid var(--blue);
   width: 500px;
   height: 500px;
   position: absolute;
@@ -268,7 +274,7 @@ a.mobile-active {
 
 .blue-circle {
   position: absolute;
-  background: #eef9ff;
+  background: var(--blueO);
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -327,7 +333,7 @@ a.mobile-active {
 
 .red-square {
   position: absolute;
-  background: #ffeded;
+  background: var(--redO);
   width: 130px;
   height: 130px;
 }
@@ -663,7 +669,7 @@ footer>p {
 
 .go-corner {
   position: absolute;
-  background-color: var(--blue);
+  background-color: var(--gray);
   height: 50px;
   width: 50px;
   top: -12.5px;
@@ -709,9 +715,21 @@ ul {
   left: 0;
   opacity: 0;
   transition: all 0.2s ease-in-out;
-  color: #f8f8f8;
+  color: white;
 }
 
 li:not(:last-child) {
+  /* margin-bottom: 10px; */
+}
+
+li>p {
+  font-size: 14px;
+  color: var(--white);
   margin-bottom: 5px;
+}
+
+li>p>span {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
 }
