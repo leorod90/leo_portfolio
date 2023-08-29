@@ -224,7 +224,7 @@ a.mobile-active {
 }
 
 .blue-square {
-  border: 20px solid var(--blue);
+  border: 20px solid var(--blueO);
   width: 500px;
   height: 500px;
   position: absolute;
@@ -391,6 +391,11 @@ a.mobile-active {
   transform: scale(1.05);
 }
 
+.download:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.05);
+}
+
 .mp4-wrapper-main {
   display: flex;
   flex-direction: column;
@@ -529,10 +534,10 @@ a.mobile-active {
 /* FOOTER */
 
 footer {
-  background: #f8f8f6;
+  background: var(--gray);
   padding: 50px 15px;
   text-align: center;
-  color: gray;
+  color: white;
 }
 
 footer>h5 {
@@ -546,7 +551,6 @@ footer>h6 {
 }
 
 footer>p {
-  color: black;
   margin-top: 10px;
 }
 
