@@ -81,7 +81,7 @@ window.onbeforeunload = function () {
 
 
 //PLAY MP4
-$('.mp4').on('mouseover mouseout', function (e) {
+$('.huddln-mp4').on('mouseover mouseout', function (e) {
   const evt = e.type;
   if (evt === 'mouseover') {
     this.play();

@@ -7,11 +7,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+:root {
+  --blue: #04b3d5;
+  --white: #f8f8f8;
+}
+
 body {
   /* font-family: "Playfair Display", serif; */
   font-family: 'Roboto Slab', serif;
   letter-spacing: 1;
   padding-top: 100px;
+  background-color: var(--white);
   /* background-color: #f8f8f8; */
 }
 
@@ -21,7 +27,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
-  background: white;
+  background-color: var(--white);
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: center;
@@ -51,7 +57,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
+  background-color: var(--white);
 }
 
 .logo-name {
@@ -189,7 +195,7 @@ a.mobile-active {
 .info>p {
   z-index: 1;
   position: relative;
-  color: #919191;
+  color: #313131;
   text-transform: capitalize;
   margin-bottom: 4rem;
 }
@@ -208,7 +214,7 @@ a.mobile-active {
 }
 
 .blue-square {
-  border: 20px solid #dbf1ff;
+  border: 20px solid  var(--blue);;
   width: 500px;
   height: 500px;
   position: absolute;
@@ -332,8 +338,56 @@ a.mobile-active {
   flex: 1;
 }
 
+.huddln-mp4-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .mp4-wrapper {
+  position: relative;
+  width: 250px;
   overflow: hidden;
+  max-width: 300px;
+  height: 520px;
+}
+
+.huddln-mp4 {
+  height: 500px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: -125px;
+  display: block;
+  margin: auto;
+  transition: all .2s ease-in-out;
+}
+
+.huddln-mp4:hover {
+  transform: scale(1.05);
+}
+
+.mp4-wrapper-main {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1080px) {
+  .mp4-wrapper-main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mp4-wrapper {
+    /* width: 50%; */
+  }
+
+  .huddln-mp4 {
+    /* height: 600px; */
+    /* left: -150px; */
+  }
 }
 
 .huddln {
@@ -472,9 +526,6 @@ footer>p {
     order: 1;
   }
 
-  .huddln-mp4 {
-    width: 100%;
-  }
 }
 
 /* phones */
