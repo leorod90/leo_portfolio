@@ -224,7 +224,7 @@ a.mobile-active {
 }
 
 .blue-square {
-  border: 20px solid var(--blue);
+  border: 20px solid var(--blueO);
   width: 500px;
   height: 500px;
   position: absolute;
