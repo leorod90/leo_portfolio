@@ -485,8 +485,8 @@ a.mobile-active {
 
 .app-image {
   border-radius: 10%;
-  width: 50px;
-  height: 50px;
+  width: 50;
+  height: 50;
   overflow: hidden;
   object-fit: contain;
   margin-right: 20px;
@@ -520,7 +520,7 @@ a.mobile-active {
 }
 
 .download {
-  width: 130px;
+  width: 130;
   margin: 0 10;
 }
 
