@@ -84,6 +84,7 @@ window.onbeforeunload = function () {
 $('.huddln-mp4').on('mouseover mouseout', function (e) {
   const evt = e.type;
   if (evt === 'mouseover') {
+    $('.speech-wrapper').fadeOut(500); // 50
     this.play();
   }
   if (evt === 'mouseout') {
