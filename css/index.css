@@ -698,6 +698,33 @@ footer>p {
   right: 7.5px;
 }
 
+.go-corner-left {
+  position: absolute;
+  background-color: var(--gray);
+  height: 50px;
+  width: 50px;
+  top: -12.5px;
+  left: -12.5px;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+.card1:hover>.go-corner-left {
+  top: -30%;
+  left: -30%;
+  height: 200%;
+  width: 200%;
+  /* transition: height 0.4s ease, width 0.4s ease; */
+  /* transition: border-radius .2s ease-in-out */
+}
+
+.go-arrow-left {
+  position: absolute;
+  color: white;
+  top: 5px;
+  left: 7.5px;
+}
+
 .card1:hover>.appear-div {
   opacity: 1;
   transition: all 0.8s ease-in-out
