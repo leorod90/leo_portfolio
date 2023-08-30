@@ -81,13 +81,19 @@ window.onbeforeunload = function () {
 
 
 //PLAY MP4
-$('.huddln-mp4').on('mouseover mouseout', function (e) {
+let hoverTimeout;
+
+$('.huddln-mp4').on('mouseover', function (e) {
   const evt = e.type;
   if (evt === 'mouseover') {
-    $('.speech-wrapper').fadeOut(500); // 50
     this.play();
+    hoverTimeout = setTimeout(() => {
+      $('.speech-wrapper').fadeOut(500);
+    }, 3000); // 3000 milliseconds = 3 seconds
   }
-  if (evt === 'mouseout') {
-    this.pause();
-  }
+});
+
+$('.huddln-mp4').on('mouseout', function (e) {
+  clearTimeout(hoverTimeout);
+  this.pause();
 });

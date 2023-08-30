@@ -471,8 +471,11 @@ a.mobile-active {
 
 .app-title {
   display: flex;
+  flex-direction: row;
+  width: 100%;
   align-items: center;
-  margin-bottom: 20;
+  /* background-color: red; */
+  /* margin-bottom: 20; */
 }
 
 .app-title h1 {
@@ -482,8 +485,11 @@ a.mobile-active {
 
 .app-image {
   border-radius: 10%;
-  width: 100;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
+  object-fit: contain;
+  margin-right: 20px;
 }
 
 .black {
@@ -503,6 +509,7 @@ a.mobile-active {
 
 .links {
   display: flex;
+  width: 360px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -513,7 +520,7 @@ a.mobile-active {
 }
 
 .download {
-  width: 150;
+  width: 130px;
   margin: 0 10;
 }
 
