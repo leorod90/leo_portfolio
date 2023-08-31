@@ -96,12 +96,6 @@ body {
   transition: all 0.1s ease-in-out;
 }
 
-.header-menu>a:hover {
-  font-weight: 700;
-  color: var(--red);
-  border-bottom: 2px solid var(--red);
-}
-
 .nav-active {
   font-weight: 700;
   color: var(--red) !important;
@@ -157,10 +151,7 @@ body {
   color: black;
 }
 
-.mobile-menu>a:hover {
-  background: var(--red);
-  color: white;
-}
+
 
 a.mobile-active {
   background: var(--red);
@@ -388,14 +379,8 @@ a.mobile-active {
   transition: all .2s ease-in-out;
 }
 
-.huddln-mp4:hover {
-  transform: scale(1.05);
-}
 
-.download:hover {
-  transition: all .2s ease-in-out;
-  transform: scale(1.05);
-}
+
 
 .mp4-wrapper-main {
   display: flex;
@@ -485,7 +470,7 @@ a.mobile-active {
 }
 
 .store_links {
-  margin: 10px 0 15px 0; 
+  margin: 10px 0 15px 0;
 }
 
 .download {
@@ -714,15 +699,6 @@ footer>p {
   transition: all 0.4s ease-in-out;
 }
 
-.card1:hover>.go-corner {
-  top: -30%;
-  right: -30%;
-  height: 200%;
-  width: 200%;
-  /* transition: height 0.4s ease, width 0.4s ease; */
-  /* transition: border-radius .2s ease-in-out */
-}
-
 .go-arrow {
   position: absolute;
   color: white;
@@ -741,25 +717,11 @@ footer>p {
   transition: all 0.4s ease-in-out;
 }
 
-.card1:hover>.go-corner-left {
-  top: -30%;
-  left: -30%;
-  height: 200%;
-  width: 200%;
-  /* transition: height 0.4s ease, width 0.4s ease; */
-  /* transition: border-radius .2s ease-in-out */
-}
-
 .go-arrow-left {
   position: absolute;
   color: white;
   top: 5px;
   left: 7.5px;
-}
-
-.card1:hover>.appear-div {
-  opacity: 1;
-  transition: all 0.8s ease-in-out
 }
 
 ul {
@@ -860,4 +822,51 @@ li>p>span {
   -webkit-box-shadow: 0px 98px 70px -20px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 98px 70px -20px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 98px 70px -20px rgba(0, 0, 0, 0.75);
+}
+
+@media (hover: hover) {
+  .card1:hover>.appear-div {
+    opacity: 1;
+    transition: all 0.8s ease-in-out
+  }
+
+
+  .card1:hover>.go-corner-left {
+    top: -30%;
+    left: -30%;
+    height: 200%;
+    width: 200%;
+    /* transition: height 0.4s ease, width 0.4s ease; */
+    /* transition: border-radius .2s ease-in-out */
+  }
+
+  .card1:hover>.go-corner {
+    top: -30%;
+    right: -30%;
+    height: 200%;
+    width: 200%;
+    /* transition: height 0.4s ease, width 0.4s ease; */
+    /* transition: border-radius .2s ease-in-out */
+  }
+
+  .huddln-mp4:hover {
+    transform: scale(1.05);
+  }
+
+  .download:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+  }
+
+  .mobile-menu>a:hover {
+    background: var(--red);
+    color: white;
+  }
+
+  .header-menu>a:hover {
+    font-weight: 700;
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+  }
+
 }
