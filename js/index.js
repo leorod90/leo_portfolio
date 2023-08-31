@@ -86,13 +86,13 @@ $(document).ready(function () {
 
   // Add the controls attribute and autoplay if it's a mobile device
   if (isMobile) {
-    $('.huddln-mp4').attr({
-      'controls': true,
-      'autoplay': true
-    });
-
     $('.speech-bubble').text('Click Me!');
   } else {
+    $('.huddln-mp4').attr({
+      'controls': false,
+      'autoplay': false
+    });
+
     $('.speech-bubble').text('Hover Me!');
   }
 });

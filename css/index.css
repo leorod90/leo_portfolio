@@ -825,9 +825,9 @@ li>p>span {
 }
 
 @media (hover: hover) {
-  body {
+  /* body {
     background-color: red;
-  }
+  } */
 
   .card1:hover>.appear-div {
     opacity: 1;
