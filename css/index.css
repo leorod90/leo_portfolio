@@ -824,6 +824,10 @@ li>p>span {
   box-shadow: 0px 98px 70px -20px rgba(0, 0, 0, 0.75);
 }
 
+.appear-div {
+  transition: all 0.8s ease-in-out
+}
+
 @media (hover: hover) {
   /* body {
     background-color: red;
@@ -831,9 +835,7 @@ li>p>span {
 
   .card1:hover>.appear-div {
     opacity: 1;
-    transition: all 0.8s ease-in-out
   }
-
 
   .card1:hover>.go-corner-left {
     top: -30%;

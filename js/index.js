@@ -87,6 +87,24 @@ $(document).ready(function () {
   // Add the controls attribute and autoplay if it's a mobile device
   if (isMobile) {
     $('.speech-bubble').text('Click Me!');
+
+    $('#click-trigger').click(function () {
+      $('.appear-div').css('opacity', 1);
+      $('.go-corner-left').css({
+        'top': '-30%',
+        'left': '-30%',
+        'height': '200%',
+        'width': '200%',
+        'border-radius': '0%'
+      });
+      $('.go-corner').css({
+        'top': '-30%',
+        'right': '-30%',
+        'height': '200%',
+        'width': '200%',
+        'border-radius': '0%'
+      });
+    });
   } else {
     $('.huddln-mp4').attr({
       'controls': false,
