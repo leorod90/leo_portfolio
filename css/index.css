@@ -364,6 +364,7 @@ a.mobile-active {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -418,38 +419,6 @@ a.mobile-active {
 .hulddn-project {
   display: flex;
   flex-direction: column;
-}
-
-
-@media only screen and (min-width: 1080px) {
-  .card1 {
-    width: 50%;
-  }
-
-  .hulddn-project {
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .mp4-wrapper-main {
-    display: flex;
-    flex-direction: row;
-    order: 3
-  }
-
-  .card3 {
-    order: 2;
-  }
-
-  .mp4-wrapper {
-    /* width: 50%; */
-  }
-
-  .huddln-mp4 {
-    /* height: 600px; */
-    /* left: -150px; */
-  }
 }
 
 .huddln {
@@ -561,7 +530,55 @@ footer>p {
   margin-top: 10px;
 }
 
+.mobile {
+  display: none !important;
+}
+
+.web {
+  display: flex !important;
+}
+
 /* MEDIA QUERY */
+
+@media only screen and (min-width: 1080px) {
+  .mobile {
+    display: flex !important;
+  }
+
+  .web {
+    display: none !important;
+  }
+
+
+  .card1 {
+    width: 50%;
+  }
+
+  .hulddn-project {
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .mp4-wrapper-main {
+    display: flex;
+    flex-direction: row;
+    order: 3
+  }
+
+  .card3 {
+    order: 2;
+  }
+
+  .mp4-wrapper {
+    /* width: 50%; */
+  }
+
+  .huddln-mp4 {
+    /* height: 600px; */
+    /* left: -150px; */
+  }
+}
 
 /* in between */
 
@@ -646,7 +663,10 @@ footer>p {
 
   .store_links {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
   }
 
   .download {
