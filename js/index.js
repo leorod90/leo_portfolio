@@ -82,19 +82,27 @@ window.onbeforeunload = function () {
 
 //PLAY MP4
 $(document).ready(function () {
-  // Check if the device supports touch interactions
-  var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+  var supportsHover = false;
 
-  // Add the controls attribute and autoplay if it's a touch screen device
-  if (isTouchDevice) {
+  // Detect if the device supports hover interactions
+  var hoverTestElement = document.createElement("div");
+  hoverTestElement.setAttribute("ontouchstart", "return;");
+  supportsHover = typeof hoverTestElement.ontouchstart === "undefined";
+
+  // Add the controls attribute and autoplay if it supports hover
+  if (supportsHover) {
+    $('.huddln-mp4').attr({
+      'controls': false,
+      'autoplay': false
+    });
+
+    $('.speech-bubble').text('Hover Me!');
+  } else {
     $('.huddln-mp4').attr({
       'controls': true,
       'autoplay': true
     });
-
     $('.speech-bubble').text('Click Me!');
-  } else {
-    $('.speech-bubble').text('Hover Me!');
   }
 });
 
