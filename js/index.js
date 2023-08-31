@@ -96,7 +96,6 @@ $(document).ready(function () {
     $('.speech-bubble').text('Hover Me!');
   }
 });
-});
 
 let hoverTimeout;
 
