@@ -85,18 +85,13 @@ $(document).ready(function () {
   // Check if the device supports touch interactions
   var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 
-  // Add the controls attribute if it's a touch screen device
+  // Add the controls attribute and autoplay if it's a touch screen device
   if (isTouchDevice) {
-    $('.huddln-mp4').attr('controls', true);
-  }
-});
+    $('.huddln-mp4').attr({
+      'controls': true,
+      'autoplay': true
+    });
 
-$(document).ready(function () {
-  // Check if the device supports touch interactions
-  var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
-
-  // Update the text content based on touch support
-  if (isTouchDevice) {
     $('.speech-bubble').text('Click Me!');
   } else {
     $('.speech-bubble').text('Hover Me!');
