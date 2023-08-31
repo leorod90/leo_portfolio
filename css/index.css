@@ -364,6 +364,7 @@ a.mobile-active {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  max-width: 500px;
   margin: 0 auto;
 }
 
