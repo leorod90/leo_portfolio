@@ -825,6 +825,10 @@ li>p>span {
 }
 
 @media (hover: hover) {
+  body {
+    background-color: red;
+  }
+
   .card1:hover>.appear-div {
     opacity: 1;
     transition: all 0.8s ease-in-out
