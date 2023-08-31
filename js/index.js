@@ -91,6 +91,18 @@ $(document).ready(function () {
   }
 });
 
+$(document).ready(function () {
+  // Check if the device supports touch interactions
+  var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+
+  // Update the text content based on touch support
+  if (isTouchDevice) {
+    $('.speech-bubble').text('Click Me!');
+  } else {
+    $('.speech-bubble').text('Hover Me!');
+  }
+});
+
 let hoverTimeout;
 
 $('.huddln-mp4').on('mouseover', function (e) {
