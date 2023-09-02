@@ -605,13 +605,6 @@ footer>p {
 
 }
 
-/* phones */
-@media only screen and (max-width: 500px) {
-  .huddln-mp4-wrapper {
-    flex-direction: column;
-  }
-}
-
 @media only screen and (max-width: 767px) {
   .info>h1 {
     font-size: 2rem;
@@ -658,6 +651,10 @@ footer>p {
     display: none;
   }
 
+  .info {
+    overflow: hidden;
+  }
+
   .me-img {
     height: 400px;
   }
@@ -674,6 +671,18 @@ footer>p {
     margin: 2.5 0;
   }
 }
+
+/* phones */
+@media only screen and (max-width: 500px) {
+  .info>h1 {
+    font-size: 1.8rem;
+  }
+
+  .huddln-mp4-wrapper {
+    flex-direction: column;
+  }
+}
+
 
 .card1 {
   /* order: 1; */
