@@ -131,3 +131,93 @@ $('.huddln-mp4').on('mouseout', function (e) {
   clearTimeout(hoverTimeout);
   this.pause();
 });
+
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+function updateElementText(element, text, iterations) {
+  const randomText = text
+    .split('')
+    .map((char, i) => {
+      if (i < iterations) {
+        return text[i];
+      }
+      if (char.match(/[A-Z]/)) {
+        return letters[Math.floor(Math.random() * 26)];
+      }
+      return char;
+    })
+    .join('');
+
+  element.text(randomText);
+}
+
+function displayRandomText() {
+  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+  const data1 = $('#title-1'); // Replace with your element selector
+  const data1Length = data1.data('value').length;
+
+  let iterations1 = 0;
+  const speed = 30
+
+  const interval1 = setInterval(function () {
+    const randomText = data1.text().split('').map((char, i) => {
+      if (i < iterations1) {
+        return data1.data('value')[i];
+      }
+      return letters[Math.floor(Math.random() * 26)];
+    }).join('');
+
+    data1.text(randomText);
+
+    if (iterations1 >= data1Length) {
+      clearInterval(interval1);
+    }
+
+    iterations1 += 0.5;
+  }, speed);
+
+  const data2 = $('#title-2'); // Replace with your element selector
+  const data2Length = data2.data('value').length;
+
+  const interval2 = setInterval(function () {
+    const randomText = data2.text().split('').map((char, i) => {
+      if (i + data1Length < iterations1) {
+        return data2.data('value')[i];
+      }
+      return letters[Math.floor(Math.random() * 26)];
+    }).join('');
+
+    data2.text(randomText);
+
+    if (iterations1 >= data2Length + data1Length) {
+      clearInterval(interval2);
+    }
+
+    iterations1 += 0.5;
+  }, speed);
+
+  const data3 = $('#title-3'); // Replace with your element selector
+  const data3Length = data3.data('value').length;
+  console.log( data2.text())
+  const interval3 = setInterval(function () {
+    const randomText = data3.text().split('').map((char, i) => {
+      if (i + data1Length + data2Length < iterations1) {
+        return data3.data('value')[i];
+      }
+      return letters[Math.floor(Math.random() * 26)];
+    }).join('');
+
+    data3.text(randomText);
+
+    if (iterations1 >= data3Length + data2Length + data1Length) {
+      clearInterval(interval3);
+    }
+
+    iterations1 += 0.5;
+  }, speed);
+}
+
+
+// Call the function to start the random text animation
+displayRandomText();
