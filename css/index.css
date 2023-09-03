@@ -849,32 +849,6 @@ li>p>span {
 }
 
 @media (hover: hover) {
-  /* body {
-    background-color: red;
-  } */
-
-  .card1:hover>.appear-div {
-    opacity: 1;
-  }
-
-  .card1:hover>.go-corner-left {
-    top: -30%;
-    left: -30%;
-    height: 200%;
-    width: 200%;
-    /* transition: height 0.4s ease, width 0.4s ease; */
-    /* transition: border-radius .2s ease-in-out */
-  }
-
-  .card1:hover>.go-corner {
-    top: -30%;
-    right: -30%;
-    height: 200%;
-    width: 200%;
-    /* transition: height 0.4s ease, width 0.4s ease; */
-    /* transition: border-radius .2s ease-in-out */
-  }
-
   .huddln-mp4:hover {
     transform: scale(1.05);
   }
@@ -895,4 +869,30 @@ li>p>span {
     border-bottom: 2px solid var(--primary);
   }
 
+}
+
+/* body {
+    background-color: red;
+  } */
+
+.card1:hover>.appear-div {
+  opacity: 1;
+}
+
+.card1:hover>.go-corner-left {
+  top: -30%;
+  left: -30%;
+  height: 200%;
+  width: 200%;
+  /* transition: height 0.4s ease, width 0.4s ease; */
+  /* transition: border-radius .2s ease-in-out */
+}
+
+.card1:hover>.go-corner {
+  top: -30%;
+  right: -30%;
+  height: 200%;
+  width: 200%;
+  /* transition: height 0.4s ease, width 0.4s ease; */
+  /* transition: border-radius .2s ease-in-out */
 }
