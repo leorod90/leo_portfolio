@@ -173,8 +173,8 @@ a.mobile-active {
 
 #home {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 0;
+  grid-template-columns: 1.2fr .8fr;
+  /* padding: 20px 0; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -525,6 +525,10 @@ footer>p {
 /* MEDIA QUERY */
 
 @media screen and (min-width: 500px) {
+  #home {
+    grid-template-columns: 1.2fr .8fr;
+  }
+
   .about-me-container p {
     padding: 50;
   }
@@ -832,7 +836,7 @@ li>p>span {
 
 .speech-bubble:after {
   border: 1em solid transparent;
-  border-top-color: var(--alt);
+  border-top-color: var(--secondary);
   content: '';
   margin-left: -1em;
   position: absolute;
