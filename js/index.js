@@ -88,6 +88,12 @@ $(document).ready(function () {
   if (isMobile) {
     $('.speech-bubble').text('Click Me!');
 
+    $(document).ready(function () {
+      $('.card1').click(function () {
+        $(this).toggleClass('clicked');
+      });
+    });
+
     $('#click-trigger').click(function () {
       $('.appear-div').css('opacity', 1);
       $('.go-corner-left').css({
@@ -199,7 +205,7 @@ function displayRandomText() {
 
   const data3 = $('#title-3'); // Replace with your element selector
   const data3Length = data3.data('value').length;
-  console.log( data2.text())
+  console.log(data2.text())
   const interval3 = setInterval(function () {
     const randomText = data3.text().split('').map((char, i) => {
       if (i + data1Length + data2Length < iterations1) {
