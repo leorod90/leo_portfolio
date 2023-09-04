@@ -131,7 +131,7 @@ body {
 }
 
 .header-menu>a {
-  font-size: 12px;
+  font-size: .8rem;
   padding: 0 10px;
   text-decoration: none;
   text-transform: uppercase;
