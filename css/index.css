@@ -95,7 +95,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   max-width: 1080px;
 }
 
@@ -481,6 +481,7 @@ a.mobile-active {
   flex-direction: row;
   width: 100%;
   align-items: center;
+  margin-bottom: 10px;
   /* background-color: red; */
   /* margin-bottom: 20; */
 }
@@ -511,7 +512,10 @@ a.mobile-active {
 
 .links {
   display: flex;
-  width: 360px;
+  height: 100%;
+  /* background-color: red; */
+  margin-top: -10px !important;
+  width: 320px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -538,6 +542,20 @@ a.mobile-active {
 
 .error {
   color: red;
+}
+
+.resume-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.resume {
+  background-color: var(--secondary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 130px;
 }
 
 /* FOOTER */
@@ -758,12 +776,12 @@ footer>p {
   padding: 20px;
   padding-top: 40px;
   margin: 20px auto;
-  border-radius: 25px;
+  border-radius: 15px;
   background-color: white;
   position: relative;
-  -webkit-box-shadow: 25px 59px 117px -71px rgba(169, 168, 168, 1);
-  -moz-box-shadow: 25px 59px 117px -71px rgba(169, 168, 168, 1);
-  box-shadow: 25px 59px 117px -71px rgba(169, 168, 168, 1);
+  -webkit-box-shadow: 10px 10px 24px -9px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 10px 10px 24px -9px rgba(204, 204, 204, 1);
+  box-shadow: 10px 10px 24px -9px rgba(204, 204, 204, 1);
   overflow: hidden;
   cursor: pointer;
 }
