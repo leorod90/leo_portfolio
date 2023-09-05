@@ -545,7 +545,14 @@ a.mobile-active {
 }
 
 .resume-wrapper {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 20px;
+  width: 90%;
+  max-width: 1080px;
+  align-self: center;
   margin-bottom: 20px;
 }
 
@@ -561,6 +568,9 @@ a.mobile-active {
 /* FOOTER */
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--primary);
   padding: 50px 15px;
   text-align: center;
@@ -889,7 +899,6 @@ li>p>span {
     top: 10px;
   }
 }
-
 
 
 .speech-bubble {
